@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Epic Cars - Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="startPage()">
+
+    <div id="loader">
+        <div class="tire-wrapper">
+          <img src="images/tire.png" alt="Loading Tire" class="loading-tire">
+          <img src="images/smoke.webp" alt="Smoke" class="smoke">
+        </div>
+        <h2>Loading...</h2>
+      </div>
+      
+<div id="page" style="display:none;">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="models.html">Models</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="page-header">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you!</p>
+  </section>
+
+  <section class="contact-form">
+    <form onsubmit="playSound(); return false;">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+</div>
+
+<audio id="carSound" src="sounds/car-sound.mp3"></audio>
+<script src="script.js"></script>
+</body>
+</html>

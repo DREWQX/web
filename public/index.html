@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Epic Cars - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="startPage()">
+
+    <div id="loader">
+        <div class="tire-wrapper">
+          <img src="images/tire.png" alt="Loading Tire" class="loading-tire">
+          <img src="images/smoke.webp" alt="Smoke" class="smoke">
+        </div>
+        <h2>Loading...</h2>
+      </div>
+      
+  <div id="page" style="display:none;">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="models.html">Models</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="hero">
+      <video autoplay muted loop playsinline class="background-video">
+        <source src="images/car-background.mp4" type="video/mp4">
+      </video>
+      <div class="overlay">
+        <h1>Welcome to Epic Cars</h1>
+        <p>Speed. Power. Innovation.</p>
+        <div class="buttons">
+          <button onclick="playSound()">Explore</button>
+          <button onclick="playSound()">View Gallery</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <audio id="carSound" src="sounds/car-sound.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

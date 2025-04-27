@@ -1,0 +1,59 @@
+/* Tire Loading Animation */
+.loading-tire {
+  width: 120px;
+  height: 120px;
+  animation: spinTire 2s linear infinite;
+  z-index: 2;
+  position: relative;
+}
+
+/* Smoke Animation */
+.smoke {
+  width: 180px;
+  opacity: 0.6;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  animation: smokeMove 3s ease-in-out infinite;
+  z-index: 1;
+}
+
+/* Tire Wrapper */
+.tire-wrapper {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+}
+
+/* Keyframes */
+@keyframes spinTire {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes smokeMove {
+  0% { transform: translate(-50%, -30%) scale(1) rotate(0deg); opacity: 0.6; }
+  50% { transform: translate(-50%, -40%) scale(1.1) rotate(5deg); opacity: 0.3; }
+  100% { transform: translate(-50%, -50%) scale(1.2) rotate(10deg); opacity: 0; }
+}
+
+nav {
+  background: #111;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff0000;
+}
